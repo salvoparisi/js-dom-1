@@ -1,7 +1,8 @@
 let i=0;
-function changeimg(){
+let button = document.getElementById('bottone')
+
+button.addEventListener('click', function(){
     let img = document.getElementById('lampadina')
-    let button = document.getElementById('bottone')
     if (i%2==0) {
         img.src = './img/yellow_lamp.png'
         button.textContent = 'SPEGNI'
@@ -11,5 +12,6 @@ function changeimg(){
     }
     console.log("lampadina cambiata");
     i++;
-}
+})
+
 
